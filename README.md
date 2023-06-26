@@ -16,4 +16,4 @@ and add them in the bin/{```your_OS```} folder (just for Linux and MacOS, for wi
 ### How to run the tests?
 You can run each Test case that functions have annotation @Test in classes in folder tests,
 Or right click **src/test/resources/xmlsuites/SwagLabProductTestSuite.xml** and run. 
-Edit Configurations in Intelij to generate test-output
+### Edit Configurations in Intelij to generate test-output
