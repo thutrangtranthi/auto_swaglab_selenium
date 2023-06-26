@@ -1,0 +1,86 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "Swag lab product test suite">
+   <test name = "Login tests">
+      <parameter name="browserName" value="edge"></parameter>
+      <classes>
+         <class name = "com.swaglab.java.tests.LoginTest"></class>
+      </classes>
+   </test>
+
+   <test name = "Product page tests">
+      <classes>
+         <class name = "com.swaglab.java.tests.ProductTest"></class>
+      </classes>
+   </test>
+
+   <test name = "Verify add product to cart at product page successfully">
+      <classes>
+         <class name = "com.swaglab.java.tests.ShoppingCartTest">
+            <methods>
+               <include name= "verifyAddProductToCartAtProductPageSuccessfully"/>
+            </methods>
+         </class>
+      </classes>
+   </test>
+
+   <test name = "Verify add product to cart at product detail page successfully">
+      <classes>
+         <class name = "com.swaglab.java.tests.ShoppingCartTest">
+            <methods>
+               <include name= "verifyAddProductToCartAtProductDetailPageSuccessfully"/>
+            </methods>
+         </class>
+      </classes>
+   </test>
+
+   <test name = "Verify remove product from cart at product page successfully">
+      <classes>
+         <class name = "com.swaglab.java.tests.ShoppingCartTest">
+            <methods>
+               <include name= "verifyRemoveProductFromCartAtProductPageSuccessfully"/>
+            </methods>
+         </class>
+      </classes>
+   </test>
+
+   <test name = "Verify remove product from cart at product detail page successfully">
+      <classes>
+         <class name = "com.swaglab.java.tests.ShoppingCartTest">
+            <methods>
+               <include name= "verifyRemoveProductFromCartAtProductDetailPageSuccessfully"/>
+            </methods>
+         </class>
+      </classes>
+   </test>
+
+   <test name = "Verify remove product from cart at shopping cart page successfully">
+      <classes>
+         <class name = "com.swaglab.java.tests.ShoppingCartTest">
+            <methods>
+               <include name= "verifyRemoveProductFromCartAtShoppingCartPageSuccessfully"/>
+            </methods>
+         </class>
+      </classes>
+   </test>
+
+   <test name = "Verify add products to cart and payment successfully">
+      <classes>
+         <class name = "com.swaglab.java.tests.PaymentTest">
+            <methods>
+               <include name= "verifyAddProductsToCartAndPaymentSuccessfully"/>
+            </methods>
+         </class>
+      </classes>
+   </test>
+
+   <test name = "Verify payment fail without fill buyer's information">
+      <classes>
+         <class name = "com.swaglab.java.tests.PaymentTest">
+            <methods>
+               <include name= "verifyPaymentFailWithoutFillBuyerInformation"/>
+            </methods>
+         </class>
+      </classes>
+   </test>
+</suite>

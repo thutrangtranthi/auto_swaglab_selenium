@@ -1,0 +1,13 @@
+environment_urls:
+    base_url: https://www.saucedemo.com/
+user_accounts:
+    standard_type:
+        username: standard_user
+        password: secret_sauce
+
+
+
+
+
+
+
